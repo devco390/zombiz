@@ -272,7 +272,7 @@ body {
 	display: inline-block;
 	background: rgba(var(--primary-color-rgb), 1);
 	height: 105px !important;
-	transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out; 
 }
 
 .wrapper-sticky .call-to-actions {
@@ -283,7 +283,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	grid-gap: 1rem;
-	transition: transform 0.5s ease-in-out;
 }
 
 .wrapper-sticky.sticky-active .call-to-actions {
