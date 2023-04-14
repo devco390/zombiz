@@ -42,7 +42,8 @@ font-family: 'Lato', sans-serif;
 	--primary-color-rgb: 115, 112, 216;
 	--primary-color-dark: #413e7e;
 	--primary-color-dark-rgb: 65, 62, 126;
-	--primary-color-light: #7086e6;	
+	--primary-color-light: #7086e6;
+	--primary-color-light-rbg: 112, 134, 230;
 }
 
 /*-------------------------------------
@@ -272,6 +273,60 @@ body {
 	background: rgba(var(--primary-color-rgb), 1);
 }
 
+.wrapper-sticky .call-to-actions {
+	background: rgba(var(--primary-color-dark-rgb), .8);
+	width: 100%;
+	height: 48px;
+	transform: translateY(32px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 1rem;
+}
+
+.wrapper-sticky.sticky-active .call-to-actions {
+	transform: translateY(-22px);
+}
+
+.call-to-action {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+a.call-to-action:hover {
+	display: flex;
+}
+
+.call-to-action p {
+	color: #ffffff;
+	padding-left: .5rem;
+}
+
+.call-to-action__circle {
+	align-items: center;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	transition: opacity .25s cubic-bezier(.4, 0, .2, 1) 0ms;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	height: 32px;
+	justify-content: center;
+	position: relative;
+	width: 32px;
+	background-color: transparent;
+}
+
+.call-to-action__circle.call-to-action__call {
+	background-color: var(--primary-color-dark);
+}
+
+.call-to-action__circle.call-to-action__whatsapp {
+	background-color: #25d366;
+}
+
 /* sticky */
 .sticky {
 	background: rgba(var(--primary-color-rgb), 1);
@@ -472,13 +527,13 @@ body {
 }
 
 .single-slide-item.slide-1 {
-	background-image: url(../../assets/images/banner/banner1.jpg);
+	background-image: url(/assets/images/banner/banner1.jpg);
 	position: relative;
 	z-index: 1;
 }
 
 .single-slide-item.slide-2 {
-	background-image: url(../../assets/images/banner/banner2.jpg);
+	background-image: url(/assets/images/banner/banner2.jpg);
 	position: relative;
 	z-index: 1;
 }
@@ -832,7 +887,7 @@ a:focus.service-btn {
 --------------------------------------*/
 .statistics {
 	position: relative;
-	background: url(../../assets/images/counter/counter-banner.jpg)no-repeat;
+	background: url(/assets/images/counter/counter-banner.jpg)no-repeat;
 	background-position: center;
 	background-size: cover;
 	padding: 98px 0 81px;
@@ -1098,19 +1153,19 @@ a:focus.service-btn {
 /*team-box-bg*/
 
 .team-box-bg-1 {
-	background: url(../../assets/images/team/team.jpg) no-repeat;
+	background: url(/assets/images/team/team.jpg) no-repeat;
 }
 
 .team-box-bg-2 {
-	background: url(../../assets/images/team/team3.jpg) no-repeat;
+	background: url(/assets/images/team/team3.jpg) no-repeat;
 }
 
 .team-box-bg-3 {
-	background: url(../../assets/images/team/team2.jpg) no-repeat;
+	background: url(/assets/images/team/team2.jpg) no-repeat;
 }
 
 .team-box-bg-4 {
-	background: url(../../assets/images/team/team3.jpg) no-repeat;
+	background: url(/assets/images/team/team3.jpg) no-repeat;
 }
 
 /*team-box-bg*/
@@ -1542,7 +1597,7 @@ a:active.learn-btn {
 --------------------------------------*/
 .contact {
 	padding: 115px 0 120px;
-	background: url(../../assets/images/footer/map.jpg)no-repeat;
+	background: url(/assets/images/footer/map.jpg)no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -2021,7 +2076,7 @@ a:active.learn-btn {
 
 .about-part {
 	position: relative;
-	background: url(../../assets/images/blog/blog-banner.jpg)no-repeat;
+	background: url(/assets/images/blog/blog-banner.jpg)no-repeat;
 	background-position: center;
 	background-size: cover;
 	padding: 124px 0 144px;
@@ -2560,4 +2615,4 @@ a:active.learn-btn {
 	border-radius: 50%;
 }
 
-/*========================Thank you=================
+/*========================Thank you=================*/

@@ -32,8 +32,6 @@ export default function Document() {
 
                 <link href="assets/css/bootsnav.css" rel="stylesheet" />
 
-                <link rel="stylesheet" href="assets/css/style.css" />
-
                 <link rel="stylesheet" href="assets/css/responsive.css" />
 
                

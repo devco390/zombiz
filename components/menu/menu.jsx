@@ -48,6 +48,21 @@ const Menu = () => {
                 </div>
             </div>
 
+            <div className="call-to-actions">
+                <a className="call-to-action" href="#">
+                    <div className="call-to-action__circle call-to-action__call">
+
+                    </div>
+                    <p>313 472 69 63</p>
+                </a>
+                <a className="call-to-action" href="#">
+                    <div className="call-to-action__circle call-to-action__whatsapp">
+
+                    </div>
+                    <p>Atención en Línea</p>
+                </a>
+            </div>
+
         </section>
     )
 }
