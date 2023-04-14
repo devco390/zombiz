@@ -271,17 +271,19 @@ body {
 	position: relative;
 	display: inline-block;
 	background: rgba(var(--primary-color-rgb), 1);
+	height: 105px !important;
+	transition: transform 0.5s ease-in-out;
 }
 
 .wrapper-sticky .call-to-actions {
 	background: rgba(var(--primary-color-dark-rgb), .8);
 	width: 100%;
 	height: 48px;
-	transform: translateY(32px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	grid-gap: 1rem;
+	transition: ;
 }
 
 .wrapper-sticky.sticky-active .call-to-actions {
