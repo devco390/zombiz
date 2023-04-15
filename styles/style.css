@@ -272,7 +272,7 @@ body {
 	display: inline-block;
 	background: rgba(var(--primary-color-rgb), 1);
 	height: 105px !important;
-	transition: transform 0.5s ease-in-out; 
+	transition: transform 0.5s ease-in-out;
 }
 
 .wrapper-sticky .call-to-actions {
@@ -282,7 +282,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	grid-gap: 1rem;
+	grid-gap: 2rem;
 }
 
 .wrapper-sticky.sticky-active .call-to-actions {
@@ -296,6 +296,29 @@ body {
 	align-items: center;
 }
 
+.call-to-action .icon {
+	position: relative;
+	display: block;
+}
+
+.call-to-action .icon-phone {
+	background: url(/assets/icons/phone.svg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 16px;
+	height: 16px;
+}
+
+.call-to-action .icon-whatsapp {
+	background: url(/assets/icons/whatsapp.svg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 24px;
+	height: 24px;
+}
+
 a.call-to-action:hover {
 	display: flex;
 }
@@ -303,6 +326,13 @@ a.call-to-action:hover {
 .call-to-action p {
 	color: #ffffff;
 	padding-left: .5rem;
+	font-weight: 500;
+}
+
+.call-to-action:hover .call-to-action__circle,
+.call-to-action:hover p {
+	opacity: .7;
+	transition: opacity .25s cubic-bezier(.4, 0, .2, 1) 0ms;
 }
 
 .call-to-action__circle {
@@ -937,8 +967,6 @@ a:focus.service-btn {
 .project {
 	padding: 117px 0 109px;
 }
-
-.project-details {}
 
 .project-content {
 	margin-top: 62px;
@@ -2058,9 +2086,6 @@ a:active.learn-btn {
 	transition: all 0.2s linear;
 }
 
-.foot-menu li a,
-.foot-menu li a:hover,
-.foot-menu li a:focus {}
 
 .foot-menu li {
 	position: relative;
